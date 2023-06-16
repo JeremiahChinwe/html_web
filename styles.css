@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@400;500&display=swap');
+
+
+/* --------------------- General Styles ---------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+}
+
+header {
+    position: fixed;
+    background-color: whitesmoke;
+    color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2.5rem;
+}
+
+header h2 a,
+.menu_items li a {
+    color: #333;
+}
+
+main {
+    background-color: rgb(2, 2, 29);
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+/* ------------------------ Utility Classes ----------------- */
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.menu_items {
+    display: flex;
+    gap: 32px;
+    color: black;
+}
+
+.menu_items li a:hover {
+    color: #9c9a9a;
+}
+
+.menu_items li .nav_link.active {
+    border-bottom: 2px solid rgb(1, 1, 27);
+    width: fit-content;
+}
+
+
+/* ------------------------------- Hero ------------------------------------ */
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    background: url(images/bg-dot.png), url(images/bg-dot.png), url(images/bg-round.png), url(images/bg-tree.png), url(images/bg-bottom-hero.png);
+    background-position: 10px 10px, bottom 190px right 10px, left 55% top -1%, center bottom -1px, center bottom -1px;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    padding-top: 32px;
+}
+
+.hero .row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 140px 60px;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.hero .row h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.hero .row h2 .whitespace {
+    white-space: nowrap;
+}
+
+.hero .column {
+    width: 50%;
+}
+
+.hero_img {
+    width: 100%;
+}
+
+.column .buttons {
+    display: flex;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.column .buttons .btn {
+    padding: 14px 26px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.column .buttons .btn:first-child {
+    background-color: #fff;
+    color: black;
+}
+
+.column .buttons .btn:first-child:hover {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: white;
+}
+
+.column .buttons .btn:last-child {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #fff;
+}
+
+.column .buttons .btn:last-child:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.menu-button {
+    display: none;
+}
+
+.menu_toggler {
+    display: none;
+}
+
+
+/* -------------------------- About Page ----------------------------- */
+.about-page {
+    min-height: 100vh;
+    background-color: rgb(235, 230, 230);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 70%;
+}
+
+.about-page .about-page-details {
+    width: 50%;
+}
+
+.about-page .about-page-details h2 {
+    padding-bottom: 0.25rem;
+    border-bottom: 4px solid rgb(2, 2, 68);
+    width: fit-content;
+}
+
+.about-page .about-page-details p {
+    padding-top: 1.5rem;
+}
+
+
+/* ------------------------- Service Page -------------------------- */
+.about-page.service {
+    background-color: rgb(172, 167, 167);
+}
+
+/* ---------------------- Project Page ------------------------------ */
+.about-page.project {
+    background-color: rgb(226, 223, 223);
+}
+
+
+/* ---------------------- Contact Page ------------------------------ */
+.about-page.contact {
+    background-color: rgb(3, 3, 59);
+    color: whitesmoke;
+}
+
+.about-page.contact .about-page-details h2 {
+    border-bottom: 4px solid orange;
+}
+
+
+
+/* ---------------------------- Footer ------------------------------------ */
+footer {
+    background-color: rgb(1, 1, 22);
+    color: #fff;
+    margin-top: 60px;
+    height: fit-content;
+    width: 100%;
+}
+
+.footer-container {
+    width: 70%;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.footer-container .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 1.5rem;
+}
+
+.footer-container .row .column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container .row .column p {
+    margin-bottom: 0.25rem;
+}
+
+.footer-container .row .column a {
+    color: rgb(155, 154, 154);
+    padding: 0.25rem 0;
+    font-size: 16px;
+    width: fit-content;
+}
+
+.footer-container .row .column a:hover {
+    color: #fff;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+    color: rgb(155, 154, 154);
+    padding-bottom: 1rem;
+    font-size: 16px;
+}
+
+.social {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.social p {
+    padding-right: 1rem;
+}
+
+.social .social-links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-self: center
+}
+
+.social .social-links a {
+    cursor: pointer;
+    color: rgb(155, 154, 154);
+}
+
+.social .social-links a:hover {
+    color: #fff;
+}
+
+
+/* ----------------------------- Media Query ----------------------------------- */
+@media screen and (max-width: 1000px) {
+    .footer-container {
+        width: 95%;
+    }
+
+    .footer-container .row .column p {
+        font-size: 16px;
+    }
+
+    .footer-container .row .column a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        padding: 1.5rem;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .menu-button:hover {
+        background-color: rgb(219, 215, 215);
+        border-radius: 10px;
+        padding: 0.25rem;
+    }
+
+    .menu_items {
+        position: fixed;
+        top: 0;
+        width: 80%;
+        background-color: whitesmoke;
+        height: 100%;
+        left: -100%;
+        flex-direction: column;
+        padding: 50px 30px 30px;
+        transition: all 0.5s ease;
+    }
+
+    .showMenu {
+        left: 0;
+    }
+
+    .menu_items li a {
+        color: #333;
+    }
+
+    .menu_toggler {
+        display: block;
+        width: 32px;
+        cursor: pointer;
+    }
+
+    .menu_items .menu_toggler {
+        width: 25px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .menu_items .menu_toggler:hover {
+        background-color: rgb(219, 215, 215);
+        border-radius: 50%;
+    }
+
+    .hero {
+        padding-top: 140px;
+    }
+
+    .hero .row {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .hero .row .column {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .about-page .about-page-details {
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 0.5rem 0.75rem;
+    }
+
+    header h2 {
+        font-size: 19px;
+    }
+
+    .hero .row .column h2 {
+        font-size: 26px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .column .buttons .btn {
+        padding: 10px 16px;
+    }
+
+    .bottom {
+        flex-direction: column;
+        width: 95%;
+        padding-bottom: 0;
+    }
+
+    .bottom .social {
+        flex-direction: column;
+    }
+
+    .bottom .social p {
+        padding-right: 0;
+        padding: 0.25rem 0;
+    }
+
+    .about-page {
+        border-bottom-right-radius: 50%;
+    }
+
+    .about-page .about-page-details {
+        width: 90%;
+    }
+}
